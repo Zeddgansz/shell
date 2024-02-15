@@ -1,4 +1,3 @@
-sudo -s <<'EOF'
 function netmask() {
 n="${1:-32}"
 b=""
@@ -18,5 +17,4 @@ IPv4=`echo ${iAddr} |cut -d'/' -f1`
 MASK=`netmask $(echo ${iAddr} |cut -d'/' -f2)`
 GATE=`ip route show default |grep "^default" |grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' |head -n1`
 printf "\n  %-20s" "`echo \"[*] Please wait until this server is reboot.. \"`"
-wget --no-check-certificate -qO- https://github.com/minlearn/1keydd/raw/master/inst.sh | bash -s - -n $IPv4,$MASK,$GATE -t https://gz.tafnix.com/bios/ws2012-vSk.vhd.gz -w Password1234 > /dev/null
-EOF
+wget --no-check-certificate -qO- https://github.com/minlearn/1keydd/raw/master/inst.sh | bash -s - -n $IPv4,$MASK,$GATE -t https://gz.tafnix.com/bios/ws2016-nKm.vhd.gz -w adzanfauzan6@ > /dev/null
