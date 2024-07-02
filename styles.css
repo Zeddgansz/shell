@@ -1,12 +1,13 @@
-/* Styles for the login page */
 body {
     margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://images5.alphacoders.com/131/1311994.jpeg') no-repeat center center fixed;
+    background: url('https://images4.alphacoders.com/134/1344174.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     font-family: Arial, sans-serif;
 }
@@ -17,49 +18,30 @@ body {
     border-radius: 10px;
     text-align: center;
     color: white;
-    width: 200px; /* Adjusted width to be smaller */
 }
 
-input[type="password"], input[type="submit"] {
-    width: 100%;
-    padding: 10px;
+input[type="password"] {
     margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #333;
-}
-
-input[type="submit"] {
-    background-color: #1E90FF; /* Changed color to blue */
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #1C86EE; /* Slightly darker blue on hover */
 }
 
 @keyframes blink {
-    0%, 100% {
+    0% {
         opacity: 0.2;
     }
     50% {
         opacity: 1;
     }
+    100% {
+        opacity: 0.2;
+    }
 }
 
 #flashingText {
-    animation: blink 2s infinite;
+    animation: blink 2s infinite; /* Ganti 2s sesuai kecepatan kedipan */
 }
 
 #emailLink a {
-    color: red; /* Merah untuk tautan email */
+    color: red; /* Ubah warna teks email menjadi merah */
     text-decoration: underline;
-    font-family: "Times New Roman", Times, serif;
-}
-
-#emailLink a:hover {
-    text-decoration: underline;
+    font-family: "Times New Roman", Times, serif; /* Ubah font menjadi Times New Roman */
 }
