@@ -12,14 +12,12 @@ body {
 }
 
 .login-container {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.5); /* Warna latar belakang semi-transparan */
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     color: white;
-    width: 250px; /* Lebih kecil dari semula */
-
+    width: 300px; /* Adjusted width */
 }
 
 input[type="password"], input[type="submit"] {
@@ -28,9 +26,6 @@ input[type="password"], input[type="submit"] {
     margin-top: 10px;
     border: none;
     border-radius: 5px;
-}
-
-input[type="password"] {
     background-color: #fff;
     color: #333;
 }
@@ -48,10 +43,10 @@ input[type="submit"]:hover {
 
 @keyframes blink {
     0%, 100% {
-        opacity: 1;
+        opacity: 0.2;
     }
     50% {
-        opacity: 0.5;
+        opacity: 1;
     }
 }
 
@@ -60,8 +55,9 @@ input[type="submit"]:hover {
 }
 
 #emailLink a {
-    color: #FFA500; /* Orange color for email link */
-    text-decoration: none;
+    color: red; /* Merah untuk tautan email */
+    text-decoration: underline;
+    font-family: "Times New Roman", Times, serif;
 }
 
 #emailLink a:hover {
