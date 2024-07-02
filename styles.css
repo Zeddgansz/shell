@@ -17,7 +17,7 @@ body {
     border-radius: 10px;
     text-align: center;
     color: white;
-    width: 250px; /* Adjusted width */
+    width: 200px; /* Adjusted width to be smaller */
 }
 
 input[type="password"], input[type="submit"] {
@@ -31,14 +31,14 @@ input[type="password"], input[type="submit"] {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #1E90FF; /* Changed color to blue */
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #1C86EE; /* Slightly darker blue on hover */
 }
 
 @keyframes blink {
